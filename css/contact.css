@@ -1,0 +1,55 @@
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+#content > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    padding: 40px;
+    gap: 20px;
+    margin-top: 10px;
+    min-width: 320px;
+    max-width: 420px;
+    width: 70%;
+    border-radius: 8px;
+
+}
+
+#content > form > label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+#content > form > label > input, #content > form > label > textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border-width:1px;
+
+}
+#content > form > label > textarea {
+    height: 100px;
+}
+
+#content > form > button {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-width: 0px;
+    font-size: 16px;
+    border-radius: 15px;
+    max-width: 320px;
+    width: 100%;
+    margin-top: 20px;
+}

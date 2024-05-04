@@ -3,39 +3,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+
 </head>
 <body>
     <!-- Navigation -->
-    <nav id="nav" style="display: flex; justify-content: space-between; padding: 20px;">
-        <div class="logo">
-            <a href="index.html"><img src="/assets/logo.png" alt="logo image" width="25px" height="25px"/></a>
+    <nav id="nav-container">
+        <div class="logo-container">
+            <a href=""><img class="logo" src="/assets/logo.png" alt="logo image"/></a>
         </div>
-        <div class="nav-options" style="margin-right: 10px;">
-            <ul class="list" style="display: flex; list-style:none; gap: 27px; margin: 0px; ">
-                <li><a style="text-decoration: none; color: black;" href="index.html">Home</a></li>
-                <li><a style="text-decoration: none; color: black;" href="about.html">About me</a></li>
-                <li><a style="text-decoration: none; color: black;" href="contact.html">Contact Us</a></li>
+        <div class="nav-options" >
+            <ul class="list" >
+                <li><a href="">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </div>
-    </nav> 
+    </nav>
 
     <!-- Contact -->
-    <div >
-       <div class="contact-container" >
-            Name:
-            <input type="text">
-        <div>
-           email:
-            <input type="text"> 
-        </div>
-        <div>
-            Message:
-            <input type="text"> 
-         </div>
-            <button type="submit">Submit</button>
-         </div>
-        
-    </div> 
+     <div id="content">
+        <h1>Contact Me</h1>
+        <p>Fill up the form then clik "Submit" and I'll raach out ASAP!</p>
+            <form action="">
+                <label>
+                    Name:
+                    <input id="name" type="text" name="name">
+                </label>
+                <label>
+                    Email:
+                    <input id="email" type="email" name="username">
+                </label>
+                <label>
+                    Message:
+                    <textarea id="message" name="message"></textarea>
+                </label>
+                <button type="submit">submit</button>
+          </form>   
+    </div>
     </div>
     
     
