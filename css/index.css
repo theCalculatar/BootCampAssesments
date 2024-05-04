@@ -1,0 +1,98 @@
+/* Navigation */
+#nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    width:25px;
+    height:25px
+}
+
+.nav-options{
+    margin-right: 10px;
+}
+
+.list {
+    display: flex;
+    list-style:none;
+    gap: 27px;
+    margin: 0px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.big-image img{
+    width: 100%;
+    height: 300px;
+}
+
+/* Bio */
+
+.bio-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.des-colomn {
+    max-width: 500px;
+}
+
+.bio-container img {
+    height: 250px; 
+    width: 250px; 
+    border-radius: 50%;
+    align-self: center;
+}
+
+/* Footer */
+
+.footer-container {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    margin-top: 47px;
+    gap: 27px;
+    list-style: none;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+}
+
+#twitter-a {
+    border: 1px black solid;
+    padding:10px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    background: #55ACEE;
+    color: white;
+}
+
+#facebook-a {
+    border: 1px black solid;
+    padding:10px 14px;
+    border-radius: 50%;
+     text-decoration: none;
+      background: #3B5998;
+      color: white;
+}
+
+#insta-a {
+    border: 1px black solid; 
+    padding:10px 16px; 
+    border-radius: 50%; 
+    text-decoration: none;
+    background: #125688;
+    color: white;
+}
