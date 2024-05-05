@@ -15,6 +15,7 @@ const addressTag = document.getElementById('address')
 const facebookTag = document.getElementById('facebook-a')
 const instaTag = document.getElementById('insta-a')
 const xTag = document.getElementById('twitter-a')
+const githubLink = document.getElementById('github')
 
 const logoTag = document.getElementById('logo')
 
@@ -30,7 +31,8 @@ addressTag.innerHTML = profile.address
 facebookTag.href = profile.facebookLink
 instaTag.href = profile.instaLink
 xTag.href = profile.xLink
-
-mapTag.src = mapLink
+githubLink.href = profile.githubLink
 
 logoTag.src = logo
+mapTag.src = mapLink
+

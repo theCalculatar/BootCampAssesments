@@ -5,12 +5,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about.css">
+    <script src="./js/about.js" type="module"></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav id="nav-container">
         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="/assets/logo-light.png" alt="logo image"/></a>
+            <a href="index.html"><img id="logo" alt="logo image"/></a>
         </div>
         <div class="nav-options" >
             <ul class="list" >
@@ -23,24 +24,22 @@
 
     <!-- About -->
     <div class="about-container">
-        <img src="/assets/mePicture.jpg" alt="headshot picture of me"/>
+        <img id="me-picture" alt="headshot picture of me"/>
         <div class="content-container">
-            <h2>Mabetlela Mahlane</h2>
-            <h5>Software developer | UX Enthusiast</h5>
-            <p>
-                Hello! I'm Alpheus Mabetlela, a recent graduate with a degree in <a style="text-decoration: none;" href="https://www.ul.ac.za/index.php?Entity=School%20Main%20Menu&school_id=1">Computer Science</a> from the <a style="text-decoration: none;" href="https://ul.ac.za">University of Limpopo</a>. My passion lies in both front-end and back-end development, 
-                where I find joy in crafting elegant software solutions and creating engaging user experiences.
-                <br>
-                When I'm not coding, you'll often find me strategizing on the chessboard, staying active in the gym, or diving into the latest video game adventures. I thrive on challenges and am always eager to learn and adapt in the dynamic world of computer science.
-            </p>
-            <h3>Education</h3>
-            <p>University of limpopo | 2019<br>Marobathota High School | 2018</p>
-            <h3>Certificates</h3>
-            <p>MTN Business Academy</p>
+            <h2 id="name"></h2>
+            <h5 id="title"></h5>
+            <p id="intro"></p>
+            <div id="edu-container">
+                <h3>Education</h3>
+            </div>
+            <div id="certificates-container">
+                <h3>Certificates</h3>    
+            </div>
+            
             <ul class=links>
-                <li><a href="https://x.com" id="twitter-a">T</a></li>
-                <li><a href="https://web.facebook.com/al.yas.58726823" id="facebook-a">F</a></li>
-                <li><a href="https://www.instagram.com/iam.mahlane/" id="insta-a">I</a></li>
+                <li><a id="twitter-a">T</a></li>
+                <li><a id="facebook-a">F</a></li>
+                <li><a id="insta-a">I</a></li>
             </ul>
         </div>
       
@@ -51,56 +50,7 @@
     <div id="project">
         <h1>What i've done</h1>
         <small>(More to be uploaded soon)</small>
-        <div class="projects-container">
-            <div class="project">
-                <img src="assets/img/medinow-screenshots.png" alt="project">
-                <h3 class="title">Medinow</h3>
-                <p class="desciption">Welcome Medinow App, your reliable companion in times of need! primarily build for students, our app is 
-                    designed with your safety in mind, providing a range of features to ensure swift and effective emergency 
-                    assistance.</p>
-                <ul class="stacks">
-                    <li>Kotlin</li>
-                    <li>Java</li>
-                    <li>XML</li>
-                    <li>Google Maps</li>
-                    <li>Android studio</li>
-                    <li>Room Database</li>
-                </ul>
-            </div>
-            <div class="project">
-                <img src="assets/img/weather-screenshots.png" alt="project">
-                <h3 class="title">Weather</h3>
-                <p class="desciption">Weather is an application that retrieves and displays weather information for a user ' s location. The app should use a weather API to fetch real-time weather data, display it
-                    to the user, and provide a forecast for the upcoming days.</p>
-                <ul class="stacks">
-                    <li>Kotlin</li>
-                    <li>XML</li>
-                    <li>REST API</li>
-                    <li>Android studio</li>
-                    <li>OpenWeatherApi</li>
-                </ul>
-            </div>
-            <div class="project">
-                <img src="assets/img/Taskmanager-screenshots.png" alt="project">
-                <div class="project-detail" style="padding: 10px;">
-                    <h3 class="title">Task Manager</h3>
-                    <p class="desciption">task management Android application. The app allow users to create, edit, and manage tasks and to-do lists. Application features includes task prioritization
-                        due dates, Notification and Data Storage.
-                    </p>
-                    <ul class="stacks">
-                        <li>Kotlin</li>
-                        <li>Java</li>
-                        <li>XML</li>
-                        <li>Google Maps</li>
-                        <li>Android studio</li>
-                        <li>Room Database</li>
-                    </ul>  
-                </div>
-                
-            </div>
-        <div>
-
-        </div>
+        <div id="project-c" class="projects-container"></div>
     
     </div>
  </div>
