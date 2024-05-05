@@ -17,6 +17,9 @@ const instaLink = 'https://www.instagram.com/iam.mahlane'
 const xLink = 'https://x.com'
 const githubLink = 'https://github.com/theCalculatar'
 
+//Formspree API
+const formSpreeApi = 'https://formspree.io/f/xpzvbyyb'
+
 //images
 const image = '../assets/headshot.jpeg'
 const video = '../assets/video.mp4'
@@ -81,5 +84,5 @@ const certificates = [
 
 const profile = {name, surname, title, education, certificates, intro, image, video, bio, address, githubLink, facebookLink, instaLink, xLink}
 
-export default {profile, projects, logo, embededLink}
+export default {profile, projects, logo, embededLink, formSpreeApi}
 

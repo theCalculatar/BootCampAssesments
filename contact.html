@@ -5,13 +5,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="/js/contact.js" type="module"></script>
 
 </head>
 <body>
     <!-- Navigation -->
     <nav id="nav-container">
         <div class="logo-container">
-            <a href="index.html"><img class="logo" src="/assets/logo-light.png" alt="logo image"/></a>
+            <a href=""><img id="logo" alt="logo image"/></a>
         </div>
         <div class="nav-options" >
             <ul class="list" >
@@ -25,19 +26,28 @@
     <!-- Contact -->
      <div id="content">
         <h1>Contact Me</h1>
-        <p>Fill up the form then clik "Submit" and I'll raach out ASAP!</p>
-            <form action="">
+        <p>Fill up the form then click "Submit" and I'll raach out ASAP!</p>
+            <form id="form">
                 <label>
                     Name:
-                    <input id="name" type="text" name="name">
+                    <input id="name" type="text" name="name" placeholder="Ex. Lisa Malatji">
+                    <span class="error-span hidden" id="nameSpan">
+                        Name must contain atleast 2 charactors
+                    </span>
                 </label>
                 <label>
                     Email:
-                    <input id="email" type="email" name="username">
+                    <input id="email" type="email" name="username" placeholder="example@domain.com" required>
+                    <span class="error-span hidden" id="emailSpan"></span>
+
                 </label>
                 <label>
                     Message:
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" name="message" placeholder="Type your message..."></textarea>
+                    <span class="error-span hidden" id="messageSpan">
+                        Make sure your message is not empty
+                    </span>
+
                 </label>
                 <button type="submit">submit</button>
           </form>   
