@@ -3,61 +3,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="/js/index.js" type="module"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav id="nav-container">
-        <div class="logo-container">
-            <a href=""><img id="logo" alt="logo image"/></a>
+    <nav id="nav">
+        <div id="nav-container">
+            <a href="" style="text-decoration: none;"><H1 id="title">loopstudios</H1></a>
+            <div id="menu-container">
+                <ul class="menu-list">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Carrers</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="nav-options" >
-            <ul class="list" >
-                <li><a href="">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-motto">
+                <h1 id="motto"></h1>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- content -->
+    <section id="content">
+        <div class="content-image">
+            <img id="content-image" src="./images/desktop/image-interactive.jpg" alt="">
+        </div>
+        <div class="content-declaration">
+            <h5 id="declaration"></h1>
+            <p id="history"></p>
+        </div>
+    </section>
+    <!-- Creations -->
+    <section id="creations">
+        <div>
+            <div class="content-lable">
+                <h6>our creations</h6>
+                <a href="">see all</a>
+            </div>
+            <div id="content-creations">
+                
+            </div> 
+        </div>
+        
+
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="colomn">
+            <h2 id="titleFooter"></h2>
+             <ul >
+                <li><a id="facebook-a"><img src="images/icon-facebook.svg" alt="facebook-a" /></a></li>
+                <li><a id="twitter-a"><img src="images/icon-twitter.svg" /></a></li>
+                <li><a id="pintrest-a"><img src="images/icon-pinterest.svg"/></a></li>
+                <li><a id="insta-a"><img src="images/icon-instagram.svg"></a></li>
             </ul>
         </div>
-    </nav>  
-
-    <!-- My Image -->
-    <div class="big-image">
-        <video id="video" controls>
-            <source type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!-- Bio -->
-    <div class="bio-container">
-        <div class="des-colomn" >
-            <h2 id="name"></h2>
-            <p id="bio"></p>
-        </div>
-        <img alt="face only image" id="image" >
-    </div>
-    
-    <!-- Footer -->
-    <footer class="footer-container">
-        <div style=>
-            <address id="address"></address>
-            <ul class=links>
-                <li><a id="twitter-a">T</a></li>
-                <li><a id="facebook-a">F</a></li>
-                <li><a id="insta-a">I</a></li>
+        <div class="colomn">
+            <ul class="menu-list">
+                <li><a href="">About</a></li>
+                <li><a href="">Carrers</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Support</a></li>
             </ul>
+            <small>&copy; 2021 Loopstudios. All rights reserved.</small>
         </div>
-        <div>
-            <a class="icon" id="github"><i class="ri-github-fill"></i></a>
-        </div>
-        <div>
-            <iframe id="imap" style="border:0;width:200px; height:100px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+
     </footer>
-
+    
 </body>
 </html>

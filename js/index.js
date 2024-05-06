@@ -1,38 +1,57 @@
 import data from "./data.js"
 
-// defining data
-const profile = data.profile
-const logo = data.logo
-const mapLink = data.embededLink
+const title = data.title
 
-// get elements from document
-const nameTag = document.getElementById('name')
-const imageTag = document.getElementById('image')
-const videoTag = document.getElementById('video')
-const bioTag = document.getElementById('bio')
+const titleTag = document.getElementById('title')
+const declarationTag = document.getElementById('declaration')
+const historyTag = document.getElementById('history')
+const mottoTag = document.getElementById('motto')
 
-const addressTag = document.getElementById('address')
+
+//
+titleTag.innerHTML = title
+declarationTag.innerHTML = data.declaration
+historyTag.innerHTML = data.history
+mottoTag.innerHTML = data.motto
+
+//creations
+const creations = data.creations
+const creationsTag = document.getElementById('content-creations')
+
+creations.map(element=>{
+    creationsTag.appendChild(creationsComponent(element))
+})
+
+
+/*
+**cardComponent
+*/ 
+
+function creationsComponent(creation){
+    const creationDetail = document.createElement('div')
+    creationDetail.classList.add('creation')
+    creationDetail.innerHTML = `<img src="images/desktop/${creation.image}"></img>
+                                <h5>${creation.title}</h>
+    
+    `
+    return creationDetail
+}
+
+
+// Footer
+const links = data.links
+
+const titleFooter = document.getElementById('titleFooter')
 const facebookTag = document.getElementById('facebook-a')
 const instaTag = document.getElementById('insta-a')
 const xTag = document.getElementById('twitter-a')
-const githubLink = document.getElementById('github')
+const pintersTag = document.getElementById('pintrest-a')
 
-const logoTag = document.getElementById('logo')
+titleFooter.innerHTML = title
+facebookTag.href = links.facebookLink
+xTag.href = links.xLink
+pintersTag.href = links.pinterstLink
+instaTag.href = links.instaLink
 
-const mapTag = document.getElementById('imap')
 
-//initiallizing the tags dynamically
-bioTag.innerHTML = `${profile.bio}`
-nameTag.innerHTML = `${profile.name} ${profile.surname}`
-imageTag.src = profile.image
-videoTag.src = profile.video
-
-addressTag.innerHTML = profile.address
-facebookTag.href = profile.facebookLink
-instaTag.href = profile.instaLink
-xTag.href = profile.xLink
-githubLink.href = profile.githubLink
-
-logoTag.src = logo
-mapTag.src = mapLink
 
